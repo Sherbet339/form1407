@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form
+      id="contact"
+      name="contact"
+      onsubmit="return validateFormOnSubmit(this)"
+      action=""
+      method="post"
+    >
+      <h2>Contact Me</h2>
+
+      <div id="main-error"></div>
+      <div>
+        <label>First name</label>
+        <input
+          placeholder="First Name"
+          type="text"
+          name="first"
+          id="first"
+          tabindex="1"
+          autofocus
+        />
+        <div id="first-error"></div>
+      </div>
+      <div>
+        <label>Last name</label>
+        <input
+          placeholder="Last name"
+          type="text"
+          name="last"
+          id="last"
+          tabindex="1"
+          autofocus
+        />
+        <div id="last-error"></div>
+      </div>
+      <div>
+        <label>Username</label>
+        <input
+          placeholder="Username"
+          type="text"
+          name="user"
+          id="user"
+          tabindex="4"
+          autofocus
+        />
+        <div id="user"></div>
+      </div>
+      <div>
+        <label>Password</label>
+        <input
+          placeholder="Password"
+          type="text"
+          name="pass"
+          id="pass"
+          tabindex="8"
+          autofocus
+        />
+        <div id="pass-error"></div>
+      </div>
+      <div>
+        <label>Email</label>
+        <input
+          placeholder="Email"
+          type="email"
+          name="email"
+          id="email"
+          tabindex="3"
+          autofocus
+        />
+        <div id="email-error"></div>
+      </div>
+      <div>
+        <button type="submit" name="submit" id="submit" tabindex="5">
+          Send
+        </button>
+      </div>
+    </form>
+
+    
+    <script>
+      var firstname = document.getElementById('first');
+      var lastname = document.getElementById('last');
+      var username = document.getElementById('user');
+      var password = document.getElementById('pass');
+      var email = document.getElementById('email');
+      var submit = document.getElementById('submit')
+
+      document.getElementById('submit').addEventListener('click',(event)=>{
+          alert('Login successfully.')
+      }
+    </script>
+
+
+  </body>
+</html>

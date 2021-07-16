@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+    background-color: #FFDA67;
+    border: 4px solid white;
+    h2 {
+        text-align: center;
+        font-size: 35px;
+        
+    }
+    div {
+        margin-bottom: 20px;
+        font-size: 22px;  
+    }
+    input {
+        height: 25px;
+        margin-left: 10px;
+    }
+    button {
+        margin-left: 100px;
+        border: 2px solid white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 70px;
+        height: 30px;
+        background-color: #FF9A67;
+    }
+}
+
+
+
+
